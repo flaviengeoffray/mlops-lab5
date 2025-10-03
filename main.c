@@ -37,6 +37,10 @@ float logistic_regression(float* features, float* thetas, int n_parameters) {
     return sigmoid(prediction);
 }
 
+float simple_tree(float *features, int n_features) {
+    return (features[0] <= 0) && (features[1] <= 0);
+}
+
 int main() {
 
     // --- Ex 1 ---
